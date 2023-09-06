@@ -10,13 +10,16 @@ export default function Produtos() {
       <h1>Produtos Informáticos - FIAPO</h1>
 
       <table>
-        <tr>
-          <th>ID</th>
-          <th>NOME</th>
-          <th>DESCRIÇÃO</th>
-          <th>PREÇO</th>
-          <th>EDITAR/EXCLUIR</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>DESCRIÇÃO</th>
+            <th>PREÇO</th>
+            <th>EDITAR/EXCLUIR</th>
+          </tr>
+        </thead>
+        
         <tbody>
           {ListaProdutos.map((produto, indice) => (
             <tr key={indice}>
