@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { ListaProdutos } from '../components/ListaProdutos';
 
 export default function EditarProdutos() {
@@ -7,13 +7,9 @@ export default function EditarProdutos() {
 
   const navigate = useNavigate();
 
-  const navigate = useNavigate();
-
   const { id } = useParams();
 
   const produtoRecuperado = ListaProdutos.filter((produto) => produto.id == id)[0]
-
-
       
   return (
     <>

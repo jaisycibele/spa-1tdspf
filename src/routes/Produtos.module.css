@@ -27,20 +27,28 @@
     border: 2px solid #ccc;
     margin: 0 auto;
 
-    .tblHeader{
+    & th{
         background-color:#ffe4c4 ;
-        border:2px solid #ccc;
-    }
-
-    .tblData{
         border:2px solid #cf5555;
+        text-align: center;
     }
 
-    .tblLine{
+    & td{
+        border:2px solid #cf5555;
+        
+            &:first-child,&:last-child{
+                text-align: center;
+            }
+
+
+    }
+
+    & tr{
         background-color: #ccc;
         &:hover{
             background-color:#b0acac ;
         }
+    
     }
 
 }
