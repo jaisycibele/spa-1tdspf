@@ -12,6 +12,7 @@ export default function EditarProdutos() {
     id: produtoRecuperado.id,
     nome: produtoRecuperado.nome,
     desc: produtoRecuperado.desc,
+    img: produtoRecuperado.img,
     preco: produtoRecuperado.preco,
   })
   
