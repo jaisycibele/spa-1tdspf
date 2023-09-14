@@ -36,7 +36,7 @@ export default function EditarProdutos() {
     // });
 
     //Ou utilizando o método indexOf
-    indice = ListaProdutos.indexOf(item => item.id == produto.id);
+    indice = ListaProdutos.findIndex(item => item.id == produto.id);
 
     //Alterando o produto na lista com o método splice()
     ListaProdutos.splice(indice,1,produto);
