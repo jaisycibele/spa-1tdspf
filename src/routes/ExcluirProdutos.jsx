@@ -9,7 +9,7 @@ export default function ExcluirProdutos() {
           <div>
             <figure>
               <img src="" alt="" />
-              <figcaption></figcaption>
+              <figcaption>Nome - Preço</figcaption>
             </figure>
           </div>
 
