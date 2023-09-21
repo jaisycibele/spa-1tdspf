@@ -3,20 +3,16 @@ import { ListaProdutos } from "../components/ListaProdutos";
 import {AiFillEdit as EditObj} from "react-icons/ai"
 import {RiDeleteBin2Fill as DelObj} from "react-icons/ri";
 import estilos from "./Produtos.module.css";
-import ModalData from "../components/ModalData";
-import {useState} from "react";
 
 export default function Produtos() {
+  document.title = "Lista de Produtos";
 
- const [status, setStatus] = useState({
-  open: false,
-  id:0,
- })
+  //Criando o bloco de reequisição dos dados utilizando o fetch com promises:
 
- const handleStatus = (status,id)=>{
-    setStatus({"open":status,"id":id})
- }
   
+
+
+
   return (
     <>
       <h1>Produtos Informáticos - FIAPO</h1>
@@ -53,9 +49,7 @@ export default function Produtos() {
         </tfoot>
       </table>
 
-            <div>
-              <ModalData statusModal={status.open} idProduto={status.id}/>
-            </div>
+           
 
     </>
   );
