@@ -19,7 +19,11 @@ fetch("http://localhost:5000/produtos", {
         "Content-Type": "application/json",
       },
     })
-      .then((response) => response.json())
+      .then((response) => {
+        console.log("o status da requisição / request http: " + response.status);
+      
+      response.json())
+      
       .then((data) => {
         setListaProdutosLocal(data);
       })
